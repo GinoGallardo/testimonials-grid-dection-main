@@ -747,7 +747,19 @@ video {
   box-sizing: border-box;
 }
 
+.style-container {
+  display: grid;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 3rem;
+}
+
 @media (min-width: 640px) {
+  .style-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: 1.5rem;
+  }
+
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -792,42 +804,6 @@ video {
 
   .md\:row-span-2 {
     grid-row: span 2 / span 2;
-  }
-
-  .md\:w-\[5rem\] {
-    width: 5rem;
-  }
-
-  .md\:w-\[50rem\] {
-    width: 50rem;
-  }
-
-  .md\:w-\[55rem\] {
-    width: 55rem;
-  }
-
-  .md\:w-\[\] {
-    width: ;
-  }
-
-  .md\:w-\[10\] {
-    width: 10;
-  }
-
-  .md\:w-\[1040\] {
-    width: 1040;
-  }
-
-  .md\:w-\[1040px\] {
-    width: 1040px;
-  }
-
-  .md\:w-\[1050px\] {
-    width: 1050px;
-  }
-
-  .md\:w-\[100px\] {
-    width: 100px;
   }
 
   .md\:w-\[1100px\] {
