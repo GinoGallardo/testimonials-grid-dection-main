@@ -11,3 +11,15 @@
 .style-container{
   @apply grid gap-x-8 gap-y-12 sm:grid-cols-1 sm:gap-y-6
 }
+
+.secction-repeat{
+  @apply rounded-xl p-8 grid
+}
+
+.img{
+  @apply size-14 rounded-full
+}
+
+.header-card{
+  @apply flex items-center gap-x-6
+}
